@@ -101,14 +101,13 @@
 		F887C3A81E6AE6690024A364 /* objective-c_sample */ = {
 			isa = PBXGroup;
 			children = (
+				F887C3E31E6AF0E60024A364 /* Views */,
+				F887C3E21E6AF0DF0024A364 /* Models */,
+				F887C3E41E6AF0EC0024A364 /* Contrllers */,
+				F887C3E51E6AF0FB0024A364 /* Common */,
+				F887C3E61E6AF1040024A364 /* Resouces */,
 				F887C3AC1E6AE6690024A364 /* AppDelegate.h */,
 				F887C3AD1E6AE6690024A364 /* AppDelegate.m */,
-				F887C3AF1E6AE6690024A364 /* ViewController.h */,
-				F887C3B01E6AE6690024A364 /* ViewController.m */,
-				F887C3B21E6AE6690024A364 /* Main.storyboard */,
-				F887C3B51E6AE6690024A364 /* Assets.xcassets */,
-				F887C3B71E6AE6690024A364 /* LaunchScreen.storyboard */,
-				F887C3BA1E6AE6690024A364 /* Info.plist */,
 				F887C3A91E6AE6690024A364 /* Supporting Files */,
 			);
 			path = "objective-c_sample";
@@ -117,6 +116,7 @@
 		F887C3A91E6AE6690024A364 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F887C3BA1E6AE6690024A364 /* Info.plist */,
 				F887C3AA1E6AE6690024A364 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -138,6 +138,46 @@
 				F887C3D01E6AE6690024A364 /* Info.plist */,
 			);
 			path = "objective-c_sampleUITests";
+			sourceTree = "<group>";
+		};
+		F887C3E21E6AF0DF0024A364 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		F887C3E31E6AF0E60024A364 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F887C3B71E6AE6690024A364 /* LaunchScreen.storyboard */,
+				F887C3B21E6AE6690024A364 /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		F887C3E41E6AF0EC0024A364 /* Contrllers */ = {
+			isa = PBXGroup;
+			children = (
+				F887C3AF1E6AE6690024A364 /* ViewController.h */,
+				F887C3B01E6AE6690024A364 /* ViewController.m */,
+			);
+			name = Contrllers;
+			sourceTree = "<group>";
+		};
+		F887C3E51E6AF0FB0024A364 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		F887C3E61E6AF1040024A364 /* Resouces */ = {
+			isa = PBXGroup;
+			children = (
+				F887C3B51E6AE6690024A364 /* Assets.xcassets */,
+			);
+			name = Resouces;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -514,6 +554,7 @@
 				F887C3D51E6AE6690024A364 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F887C3D61E6AE6690024A364 /* Build configuration list for PBXNativeTarget "objective-c_sampleTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +563,7 @@
 				F887C3D81E6AE6690024A364 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F887C3D91E6AE6690024A364 /* Build configuration list for PBXNativeTarget "objective-c_sampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +572,7 @@
 				F887C3DB1E6AE6690024A364 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
