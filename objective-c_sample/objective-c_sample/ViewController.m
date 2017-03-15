@@ -7,17 +7,23 @@
 //
 
 #import "ViewController.h"
+#import "ViewManager.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-
+@property (nonatomic)ViewManager *viewManager;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    // TableView Delegate
+    _tableView.delegate = self;
+    _tableView.dataSource = self;
+
+    _viewManager = [ViewManager new];
 }
 
 

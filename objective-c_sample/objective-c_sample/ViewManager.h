@@ -9,4 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface ViewManager : NSObject
+- (NSArray*)getView;
 @end

@@ -9,5 +9,9 @@
 #import "ViewManager.h"
 
 @implementation ViewManager
-
+- (NSArray*)getView
+{
+    NSArray *viewArray = [NSArray new];
+    return viewArray;
+}
 @end
