@@ -37,15 +37,17 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 0;
+    return _viewManager.getView.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSString *cellName = [NSString stringWithFormat:@"%@",_viewManager.getView[indexPath.row]];
     UITableViewCell *cell = [[UITableViewCell alloc]
                              initWithStyle:UITableViewCellStyleDefault
                              reuseIdentifier:@"Cell"];
-return cell;
+    cell.textLabel.text = cellName;
+    return cell;
 }
 
 #pragma mark - Table view delegate
