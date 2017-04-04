@@ -38,6 +38,7 @@
                     <navigationItem key="navigationItem" title="Objective-Cの基本" id="pkM-tG-LXT"/>
                     <connections>
                         <outlet property="tableView" destination="dys-lC-6aP" id="LHi-s3-NE6"/>
+                        <segue destination="pfc-s2-72T" kind="show" identifier="toDetailViewController" id="qrc-nQ-tP4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -60,7 +61,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZLK-uX-ED8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1736.8" y="136.28185907046478"/>
+            <point key="canvasLocation" x="1876" y="136"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GsP-mz-vHd">
