@@ -10,5 +10,5 @@
 
 @interface DetailViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *textLabel;
-
+@property (strong, nonatomic) NSString *textData;
 @end

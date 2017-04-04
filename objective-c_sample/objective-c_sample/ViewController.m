@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "ViewManager.h"
+#import "DetailViewController.h"
 
 @interface ViewController () <UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -53,11 +54,17 @@
 #pragma mark - Table view delegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self performSegueWithIdentifier:@"toDetailViewController" sender:indexPath];
+    [self performSegueWithIdentifier:@"toDetailViewController" sender:self];
 }
 
 #pragma mark - Segue
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([[segue identifier] isEqualToString:@"toDetailViewController"]) {
+        NSIndexPath *indexPath = [_tableView indexPathForSelectedRow];
+        DetailViewController *detailViewController = [segue destinationViewController];
+        detailViewController.textData = [NSString stringWithFormat:@"%@",_viewManager.getView[indexPath.row]];
+    }
 }
 
 @end
