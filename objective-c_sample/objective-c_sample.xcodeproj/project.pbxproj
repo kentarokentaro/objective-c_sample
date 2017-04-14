@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		495281E71E9375BE000C8588 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 495281E61E9375BE000C8588 /* DetailViewController.m */; };
+		49B2041A1E793B8600E50366 /* ViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B204191E793B8600E50366 /* ViewManager.m */; };
 		F887C3AB1E6AE6690024A364 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F887C3AA1E6AE6690024A364 /* main.m */; };
 		F887C3AE1E6AE6690024A364 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F887C3AD1E6AE6690024A364 /* AppDelegate.m */; };
 		F887C3B11E6AE6690024A364 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F887C3B01E6AE6690024A364 /* ViewController.m */; };
@@ -35,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		495281E51E9375BE000C8588 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		495281E61E9375BE000C8588 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		49B204181E793B8600E50366 /* ViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewManager.h; sourceTree = "<group>"; };
+		49B204191E793B8600E50366 /* ViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewManager.m; sourceTree = "<group>"; };
 		F887C3A61E6AE6690024A364 /* objective-c_sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "objective-c_sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F887C3AA1E6AE6690024A364 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F887C3AC1E6AE6690024A364 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -161,6 +167,8 @@
 			children = (
 				F887C3AF1E6AE6690024A364 /* ViewController.h */,
 				F887C3B01E6AE6690024A364 /* ViewController.m */,
+				495281E51E9375BE000C8588 /* DetailViewController.h */,
+				495281E61E9375BE000C8588 /* DetailViewController.m */,
 			);
 			name = Contrllers;
 			sourceTree = "<group>";
@@ -168,6 +176,8 @@
 		F887C3E51E6AF0FB0024A364 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				49B204181E793B8600E50366 /* ViewManager.h */,
+				49B204191E793B8600E50366 /* ViewManager.m */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -316,8 +326,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				495281E71E9375BE000C8588 /* DetailViewController.m in Sources */,
 				F887C3B11E6AE6690024A364 /* ViewController.m in Sources */,
 				F887C3AE1E6AE6690024A364 /* AppDelegate.m in Sources */,
+				49B2041A1E793B8600E50366 /* ViewManager.m in Sources */,
 				F887C3AB1E6AE6690024A364 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
