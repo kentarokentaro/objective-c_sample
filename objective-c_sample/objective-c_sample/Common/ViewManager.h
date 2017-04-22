@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface ViewManager : NSObject
-- (NSArray*)getView;
+- (NSArray*)viewArray;
+- (NSString*)itemName:(NSInteger)indexPath;
 @end

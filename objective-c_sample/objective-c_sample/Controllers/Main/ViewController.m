@@ -36,13 +36,13 @@
 
 - (NSInteger)tableView:(UITableView *)tableView
     numberOfRowsInSection:(NSInteger)section {
-  return _viewManager.getView.count;
+  return _viewManager.viewArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath {
   NSString *cellName =
-      [NSString stringWithFormat:@"%@", _viewManager.getView[indexPath.row]];
+      [NSString stringWithFormat:@"%@", [_viewManager itemName:indexPath.row]];
   UITableViewCell *cell =
       [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
                              reuseIdentifier:@"Cell"];
@@ -62,8 +62,8 @@
     NSIndexPath *indexPath = [_tableView indexPathForSelectedRow];
     DetailViewController *detailViewController =
         [segue destinationViewController];
-    detailViewController.textData =
-        [NSString stringWithFormat:@"%@", _viewManager.getView[indexPath.row]];
+    detailViewController.textData = [NSString
+        stringWithFormat:@"%@", [_viewManager itemName:indexPath.row]];
   }
 }
 
