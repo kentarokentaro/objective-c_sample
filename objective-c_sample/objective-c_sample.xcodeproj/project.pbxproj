@@ -17,6 +17,7 @@
 		F8EB44BA1EAB3EE0007F4A2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8EB44B81EAB3EE0007F4A2E /* LaunchScreen.storyboard */; };
 		F8EB44BE1EAB3F32007F4A2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8EB44BD1EAB3F32007F4A2E /* Main.storyboard */; };
 		F8EB44C31EAB444E007F4A2E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8EB44C21EAB444E007F4A2E /* ViewController.m */; };
+		F8EB44CB1EAB4C1B007F4A2E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8EB44CA1EAB4C1B007F4A2E /* BaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		F8EB44BD1EAB3F32007F4A2E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F8EB44C11EAB444E007F4A2E /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		F8EB44C21EAB444E007F4A2E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F8EB44C91EAB4C1B007F4A2E /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		F8EB44CA1EAB4C1B007F4A2E /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +167,7 @@
 		F887C3E41E6AF0EC0024A364 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F8EB44C81EAB4BEB007F4A2E /* Base */,
 				F8EB44C01EAB440A007F4A2E /* Main */,
 				495281E51E9375BE000C8588 /* DetailViewController.h */,
 				495281E61E9375BE000C8588 /* DetailViewController.m */,
@@ -213,6 +217,15 @@
 				F8EB44C21EAB444E007F4A2E /* ViewController.m */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		F8EB44C81EAB4BEB007F4A2E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F8EB44C91EAB4C1B007F4A2E /* BaseViewController.h */,
+				F8EB44CA1EAB4C1B007F4A2E /* BaseViewController.m */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,6 +365,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				495281E71E9375BE000C8588 /* DetailViewController.m in Sources */,
+				F8EB44CB1EAB4C1B007F4A2E /* BaseViewController.m in Sources */,
 				F887C3AE1E6AE6690024A364 /* AppDelegate.m in Sources */,
 				49B2041A1E793B8600E50366 /* ViewManager.m in Sources */,
 				F887C3AB1E6AE6690024A364 /* main.m in Sources */,
