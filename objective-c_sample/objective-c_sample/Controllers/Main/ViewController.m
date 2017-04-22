@@ -53,18 +53,13 @@
 #pragma mark - Table view delegate
 - (void)tableView:(UITableView *)tableView
     didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-  [self performSegueWithIdentifier:@"toDetailViewController" sender:self];
+  [self.navigationController
+      pushViewController:[_viewManager viewControllerName:indexPath.row]
+                animated:YES];
 }
 
 #pragma mark - Segue
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-  if ([[segue identifier] isEqualToString:@"toDetailViewController"]) {
-    NSIndexPath *indexPath = [_tableView indexPathForSelectedRow];
-    DetailViewController *detailViewController =
-        [segue destinationViewController];
-    detailViewController.textData = [NSString
-        stringWithFormat:@"%@", [_viewManager itemName:indexPath.row]];
-  }
 }
 
 @end

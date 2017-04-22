@@ -23,4 +23,11 @@
   return itemName;
 }
 
+- (UIViewController *)viewControllerName:(NSInteger)indexPath {
+  NSDictionary *dictionary = [self viewArray][indexPath];
+  Class myClass = NSClassFromString([dictionary objectForKey:@"Classname"]);
+  UIViewController *vc = (UIViewController *)[[myClass alloc] init];
+  return vc;
+}
+
 @end

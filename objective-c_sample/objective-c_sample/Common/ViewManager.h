@@ -7,8 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface ViewManager : NSObject
 - (NSArray*)viewArray;
 - (NSString*)itemName:(NSInteger)indexPath;
+- (UIViewController*)viewControllerName:(NSInteger)indexPath;
 @end
