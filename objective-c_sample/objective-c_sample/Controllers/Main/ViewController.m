@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "DetailViewController.h"
 #import "ViewManager.h"
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
