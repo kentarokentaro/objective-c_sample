@@ -18,6 +18,10 @@
 		F8EB44BE1EAB3F32007F4A2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8EB44BD1EAB3F32007F4A2E /* Main.storyboard */; };
 		F8EB44C31EAB444E007F4A2E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8EB44C21EAB444E007F4A2E /* ViewController.m */; };
 		F8EB44CB1EAB4C1B007F4A2E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8EB44CA1EAB4C1B007F4A2E /* BaseViewController.m */; };
+		F8EB44D21EAB5765007F4A2E /* HelloViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8EB44D11EAB5765007F4A2E /* HelloViewController.m */; };
+		F8EB44D51EAB5780007F4A2E /* HelloModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8EB44D41EAB5780007F4A2E /* HelloModel.m */; };
+		F8EB44D81EAB5791007F4A2E /* HelloViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8EB44D71EAB5791007F4A2E /* HelloViewModel.m */; };
+		F8EB44DA1EAB57E7007F4A2E /* Hello.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8EB44D91EAB57E7007F4A2E /* Hello.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,13 @@
 		F8EB44C21EAB444E007F4A2E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F8EB44C91EAB4C1B007F4A2E /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		F8EB44CA1EAB4C1B007F4A2E /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		F8EB44D01EAB5765007F4A2E /* HelloViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloViewController.h; sourceTree = "<group>"; };
+		F8EB44D11EAB5765007F4A2E /* HelloViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloViewController.m; sourceTree = "<group>"; };
+		F8EB44D31EAB5780007F4A2E /* HelloModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloModel.h; sourceTree = "<group>"; };
+		F8EB44D41EAB5780007F4A2E /* HelloModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloModel.m; sourceTree = "<group>"; };
+		F8EB44D61EAB5791007F4A2E /* HelloViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloViewModel.h; sourceTree = "<group>"; };
+		F8EB44D71EAB5791007F4A2E /* HelloViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloViewModel.m; sourceTree = "<group>"; };
+		F8EB44D91EAB57E7007F4A2E /* Hello.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Hello.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +163,7 @@
 		F887C3E21E6AF0DF0024A364 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F8EB44CE1EAB572D007F4A2E /* Hello */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -159,6 +171,7 @@
 		F887C3E31E6AF0E60024A364 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F8EB44CC1EAB570D007F4A2E /* Hello */,
 				F8EB44B71EAB3D70007F4A2E /* Storyboards */,
 			);
 			path = Views;
@@ -167,6 +180,7 @@
 		F887C3E41E6AF0EC0024A364 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F8EB44CF1EAB5738007F4A2E /* Hello */,
 				F8EB44C81EAB4BEB007F4A2E /* Base */,
 				F8EB44C01EAB440A007F4A2E /* Main */,
 				495281E51E9375BE000C8588 /* DetailViewController.h */,
@@ -195,6 +209,7 @@
 		F8EB44B71EAB3D70007F4A2E /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				F8EB44CD1EAB5720007F4A2E /* Hello */,
 				F8EB44BC1EAB3EFC007F4A2E /* Main */,
 				F8EB44B81EAB3EE0007F4A2E /* LaunchScreen.storyboard */,
 			);
@@ -226,6 +241,42 @@
 				F8EB44CA1EAB4C1B007F4A2E /* BaseViewController.m */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		F8EB44CC1EAB570D007F4A2E /* Hello */ = {
+			isa = PBXGroup;
+			children = (
+				F8EB44D61EAB5791007F4A2E /* HelloViewModel.h */,
+				F8EB44D71EAB5791007F4A2E /* HelloViewModel.m */,
+			);
+			path = Hello;
+			sourceTree = "<group>";
+		};
+		F8EB44CD1EAB5720007F4A2E /* Hello */ = {
+			isa = PBXGroup;
+			children = (
+				F8EB44D91EAB57E7007F4A2E /* Hello.storyboard */,
+			);
+			name = Hello;
+			path = Storyboards/Hello;
+			sourceTree = "<group>";
+		};
+		F8EB44CE1EAB572D007F4A2E /* Hello */ = {
+			isa = PBXGroup;
+			children = (
+				F8EB44D31EAB5780007F4A2E /* HelloModel.h */,
+				F8EB44D41EAB5780007F4A2E /* HelloModel.m */,
+			);
+			path = Hello;
+			sourceTree = "<group>";
+		};
+		F8EB44CF1EAB5738007F4A2E /* Hello */ = {
+			isa = PBXGroup;
+			children = (
+				F8EB44D01EAB5765007F4A2E /* HelloViewController.h */,
+				F8EB44D11EAB5765007F4A2E /* HelloViewController.m */,
+			);
+			path = Hello;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,6 +391,7 @@
 				F8EB44BE1EAB3F32007F4A2E /* Main.storyboard in Resources */,
 				F887C3B61E6AE6690024A364 /* Assets.xcassets in Resources */,
 				F8EB44BA1EAB3EE0007F4A2E /* LaunchScreen.storyboard in Resources */,
+				F8EB44DA1EAB57E7007F4A2E /* Hello.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,7 +419,10 @@
 				495281E71E9375BE000C8588 /* DetailViewController.m in Sources */,
 				F8EB44CB1EAB4C1B007F4A2E /* BaseViewController.m in Sources */,
 				F887C3AE1E6AE6690024A364 /* AppDelegate.m in Sources */,
+				F8EB44D81EAB5791007F4A2E /* HelloViewModel.m in Sources */,
 				49B2041A1E793B8600E50366 /* ViewManager.m in Sources */,
+				F8EB44D51EAB5780007F4A2E /* HelloModel.m in Sources */,
+				F8EB44D21EAB5765007F4A2E /* HelloViewController.m in Sources */,
 				F887C3AB1E6AE6690024A364 /* main.m in Sources */,
 				F8EB44C31EAB444E007F4A2E /* ViewController.m in Sources */,
 			);
