@@ -10,6 +10,6 @@
 #import "BaseViewController.h"
 
 @interface DetailViewController : BaseViewController
-@property (weak, nonatomic) IBOutlet UILabel *textLabel;
-@property (strong, nonatomic) NSString *textData;
+@property(weak, nonatomic) IBOutlet UILabel *textLabel;
+@property(strong, nonatomic) NSString *textData;
 @end

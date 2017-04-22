@@ -9,10 +9,12 @@
 #import "ViewManager.h"
 
 @implementation ViewManager
-- (NSArray*)getView
-{
-    NSArray *viewArray = [NSArray new];
-    viewArray = @[@"Variables and Constants",@"Basic Data Class",@"Basic Calculation",@"Basic if"];
-    return viewArray;
+- (NSArray *)getView {
+  NSArray *viewArray = [NSArray new];
+  viewArray = @[
+    @"Variables and Constants", @"Basic Data Class", @"Basic Calculation",
+    @"Basic if"
+  ];
+  return viewArray;
 }
 @end

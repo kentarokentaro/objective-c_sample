@@ -15,17 +15,17 @@
 @implementation BaseViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
+  [super viewDidLoad];
 
-    // Navigation
-    self.navigationController.navigationBar.backgroundColor = [UIColor blueColor];
-    
-    // BackGround
-    self.view.backgroundColor = [UIColor whiteColor];
+  // Navigation
+  self.navigationController.navigationBar.backgroundColor = [UIColor blueColor];
+
+  // BackGround
+  self.view.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
+  [super didReceiveMemoryWarning];
 }
 
 @end
