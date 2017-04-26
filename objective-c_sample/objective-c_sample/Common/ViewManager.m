@@ -23,10 +23,23 @@
   return itemName;
 }
 
-- (UIViewController *)viewControllerName:(NSInteger)indexPath {
+- (NSString *)className:(NSInteger)indexPath {
   NSDictionary *dictionary = [self viewArray][indexPath];
-  Class myClass = NSClassFromString([dictionary objectForKey:@"Classname"]);
+  NSString *classname = [dictionary objectForKey:@"Classname"];
+  return classname;
+}
+
+- (UIViewController *)selectViewController:(NSInteger)indexPath {
+  Class myClass = NSClassFromString([self className:indexPath]);
   UIViewController *vc = (UIViewController *)[[myClass alloc] init];
+  return vc;
+}
+
+- (UIViewController *)selectViewControllerForStoryBoard:(NSInteger)indexPath {
+  UIStoryboard *storyboard =
+      [UIStoryboard storyboardWithName:[self className:indexPath] bundle:nil];
+  UIViewController *vc = [storyboard
+      instantiateViewControllerWithIdentifier:[self className:indexPath]];
   return vc;
 }
 

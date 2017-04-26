@@ -20,7 +20,7 @@
 		F8EB44D21EAB5765007F4A2E /* HelloViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8EB44D11EAB5765007F4A2E /* HelloViewController.m */; };
 		F8EB44D51EAB5780007F4A2E /* HelloModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8EB44D41EAB5780007F4A2E /* HelloModel.m */; };
 		F8EB44D81EAB5791007F4A2E /* HelloViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F8EB44D71EAB5791007F4A2E /* HelloViewModel.m */; };
-		F8EB44DA1EAB57E7007F4A2E /* Hello.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8EB44D91EAB57E7007F4A2E /* Hello.storyboard */; };
+		F8EB44DA1EAB57E7007F4A2E /* HelloViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8EB44D91EAB57E7007F4A2E /* HelloViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +67,7 @@
 		F8EB44D41EAB5780007F4A2E /* HelloModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloModel.m; sourceTree = "<group>"; };
 		F8EB44D61EAB5791007F4A2E /* HelloViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloViewModel.h; sourceTree = "<group>"; };
 		F8EB44D71EAB5791007F4A2E /* HelloViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloViewModel.m; sourceTree = "<group>"; };
-		F8EB44D91EAB57E7007F4A2E /* Hello.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Hello.storyboard; sourceTree = "<group>"; };
+		F8EB44D91EAB57E7007F4A2E /* HelloViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HelloViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,7 +250,7 @@
 		F8EB44CD1EAB5720007F4A2E /* Hello */ = {
 			isa = PBXGroup;
 			children = (
-				F8EB44D91EAB57E7007F4A2E /* Hello.storyboard */,
+				F8EB44D91EAB57E7007F4A2E /* HelloViewController.storyboard */,
 			);
 			name = Hello;
 			path = Storyboards/Hello;
@@ -386,7 +386,7 @@
 				F8EB44BE1EAB3F32007F4A2E /* Main.storyboard in Resources */,
 				F887C3B61E6AE6690024A364 /* Assets.xcassets in Resources */,
 				F8EB44BA1EAB3EE0007F4A2E /* LaunchScreen.storyboard in Resources */,
-				F8EB44DA1EAB57E7007F4A2E /* Hello.storyboard in Resources */,
+				F8EB44DA1EAB57E7007F4A2E /* HelloViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

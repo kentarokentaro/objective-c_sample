@@ -12,5 +12,6 @@
 @interface ViewManager : NSObject
 - (NSArray*)viewArray;
 - (NSString*)itemName:(NSInteger)indexPath;
-- (UIViewController*)viewControllerName:(NSInteger)indexPath;
+- (UIViewController*)selectViewController:(NSInteger)indexPath;
+- (UIViewController*)selectViewControllerForStoryBoard:(NSInteger)indexPath;
 @end
