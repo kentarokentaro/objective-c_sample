@@ -53,7 +53,8 @@
 - (void)tableView:(UITableView *)tableView
     didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
   [self.navigationController
-      pushViewController:[_viewManager viewControllerName:indexPath.row]
+      pushViewController:[_viewManager
+                             selectViewControllerForStoryBoard:indexPath.row]
                 animated:YES];
 }
 
