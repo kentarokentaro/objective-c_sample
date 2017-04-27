@@ -9,30 +9,57 @@
 #import "HelloViewController.h"
 
 @interface HelloViewController ()
+{
+    int count;
+    NSTimer *mainTimer;
+    NSString *text;
+}
 
+@property (weak, nonatomic) IBOutlet UILabel *helloLabel;
 @end
 
 @implementation HelloViewController
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  // Do any additional setup after loading the view.
+
+    count = 0;
+    text = @"Hello World!";
+    
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:0.5
+                                                      target:self
+                                                    selector:@selector(dispAnimation:)
+                                                    userInfo:nil
+                                                     repeats:YES];
+    mainTimer = timer;
 }
 
 - (void)didReceiveMemoryWarning {
   [super didReceiveMemoryWarning];
-  // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+- (void)dispAnimation:(NSTimer *)timer
+{
+    _helloLabel.alpha = 0.2f;
+    
+    [UIView animateWithDuration:0.3 animations:^{
+        count++;
+        NSString *tmp_str = [text substringToIndex:(count)];
+        _helloLabel.alpha = 1.0f;
+        _helloLabel.text = tmp_str;
+    }];
 
-// In a storyboard-based application, you will often want to do a little
-preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if (text.length == count) {
+      
+        _helloLabel.center = self.view.center;
+        CGRect frame = _helloLabel.frame;
+        frame.origin.y -= 200; // 右に100移動
+        _helloLabel.frame = frame;
+        
+        [timer invalidate];
+        count = 0;
+        timer = nil;
+    }
 }
-*/
 
 @end
