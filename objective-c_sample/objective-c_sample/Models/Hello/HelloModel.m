@@ -10,4 +10,19 @@
 
 @implementation HelloModel
 
+- (NSString *)getOverview {
+  NSString *str = @"";
+  return str;
+}
+
+- (NSString *)getCodeText {
+  NSString *str = @"";
+  return str;
+}
+
+- (NSString *)notes {
+  NSString *str = @"";
+  return str;
+}
+
 @end
