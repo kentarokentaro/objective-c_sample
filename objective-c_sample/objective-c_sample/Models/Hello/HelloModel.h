@@ -10,7 +10,7 @@
 
 @interface HelloModel : NSObject
 
-- (NSString*)getOverview;
-- (NSString*)getCodeText;
-- (NSString*)notes;
++ (NSString*)getOverview;
++ (NSString*)getCodeText;
++ (NSString*)notes;
 @end

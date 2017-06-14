@@ -7,14 +7,16 @@
 //
 
 #import "HelloViewController.h"
+#import "HelloModel.h"
 
 @interface HelloViewController () {
   int count;
   NSTimer *mainTimer;
-  NSString *text;
 }
 
 @property(weak, nonatomic) IBOutlet UILabel *helloLabel;
+@property(weak, nonatomic) HelloModel *helloModel;
+
 @end
 
 @implementation HelloViewController
@@ -23,8 +25,7 @@
   [super viewDidLoad];
 
   count = 0;
-    text = HelloString(@"Overview_Hello");
-    
+
   NSTimer *timer =
       [NSTimer scheduledTimerWithTimeInterval:0.1
                                        target:self
@@ -43,28 +44,32 @@
       animateWithDuration:0.2
                animations:^{
                  count++;
-                 NSString *tmp_str = [text substringToIndex:(count)];
-
-                 // AttributeStringに変換
-                 NSMutableAttributedString *attrStr;
-                 attrStr =
-                     [[NSMutableAttributedString alloc] initWithString:tmp_str];
-                 [attrStr attributedSubstringFromRange:NSMakeRange(0, 1)];
-
-                 // フォント
-                 [attrStr
-                     addAttribute:NSFontAttributeName
-                            value:[UIFont fontWithName:@"Futura-CondensedMedium"
-                                                  size:17.]
-                            range:NSMakeRange(0, [attrStr length])];
-                 [_helloLabel setAttributedText:attrStr];
+                 NSString *characterByOne =
+                     [[HelloModel getOverview] substringToIndex:(count)];
+                 [_helloLabel
+                     setAttributedText:[self
+                                           createAttributeText:characterByOne]];
                }];
 
-  if (text.length == count) {
+  if ([HelloModel getOverview].length == count) {
     [timer invalidate];
     count = 0;
     timer = nil;
   }
+}
+
+- (NSMutableAttributedString *)createAttributeText:(NSString *)text {
+  // AttributeStringに変換
+  NSMutableAttributedString *attrStr;
+  attrStr = [[NSMutableAttributedString alloc] initWithString:text];
+  [attrStr attributedSubstringFromRange:NSMakeRange(0, 1)];
+
+  // フォント
+  [attrStr addAttribute:NSFontAttributeName
+                  value:[UIFont fontWithName:@"Futura-CondensedMedium" size:17.]
+                  range:NSMakeRange(0, [attrStr length])];
+
+  return attrStr;
 }
 
 @end

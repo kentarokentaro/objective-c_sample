@@ -10,17 +10,17 @@
 
 @implementation HelloModel
 
-- (NSString *)getOverview {
++ (NSString *)getOverview {
+  NSString *str = HelloString(@"Overview_Hello");
+  return str;
+}
+
++ (NSString *)getCodeText {
   NSString *str = @"";
   return str;
 }
 
-- (NSString *)getCodeText {
-  NSString *str = @"";
-  return str;
-}
-
-- (NSString *)notes {
++ (NSString *)notes {
   NSString *str = @"";
   return str;
 }
