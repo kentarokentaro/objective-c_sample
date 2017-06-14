@@ -136,7 +136,7 @@
 				F887C3BA1E6AE6690024A364 /* Info.plist */,
 				F887C3AA1E6AE6690024A364 /* main.m */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		F887C3C21E6AE6690024A364 /* objective-c_sampleTests */ = {
@@ -547,7 +547,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3B64BJJV65;
-				INFOPLIST_FILE = "objective-c_sample/Info.plist";
+				INFOPLIST_FILE = "objective-c_sample/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mkp.objective-c-sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -559,7 +559,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3B64BJJV65;
-				INFOPLIST_FILE = "objective-c_sample/Info.plist";
+				INFOPLIST_FILE = "objective-c_sample/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mkp.objective-c-sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
