@@ -10,6 +10,7 @@
 		49B2041A1E793B8600E50366 /* ViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B204191E793B8600E50366 /* ViewManager.m */; };
 		49E26A851EF122540098DE29 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49E26A831EF122540098DE29 /* Info.plist */; };
 		49E26A861EF122540098DE29 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E26A841EF122540098DE29 /* main.m */; };
+		49E26A891EF1230D0098DE29 /* Hello.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49E26A881EF1230D0098DE29 /* Hello.strings */; };
 		F887C3AE1E6AE6690024A364 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F887C3AD1E6AE6690024A364 /* AppDelegate.m */; };
 		F887C3B61E6AE6690024A364 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F887C3B51E6AE6690024A364 /* Assets.xcassets */; };
 		F887C3C41E6AE6690024A364 /* objective_c_sampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F887C3C31E6AE6690024A364 /* objective_c_sampleTests.m */; };
@@ -47,6 +48,7 @@
 		49E26A811EF1211B0098DE29 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		49E26A831EF122540098DE29 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49E26A841EF122540098DE29 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		49E26A881EF1230D0098DE29 /* Hello.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Hello.strings; sourceTree = "<group>"; };
 		F887C3A61E6AE6690024A364 /* objective-c_sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "objective-c_sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F887C3AC1E6AE6690024A364 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F887C3AD1E6AE6690024A364 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -97,6 +99,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49E26A871EF122E30098DE29 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				49E26A881EF1230D0098DE29 /* Hello.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
 		F887C39D1E6AE6690024A364 = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +209,7 @@
 		F887C3E61E6AF1040024A364 /* Resouces */ = {
 			isa = PBXGroup;
 			children = (
+				49E26A871EF122E30098DE29 /* Strings */,
 				F887C3B51E6AE6690024A364 /* Assets.xcassets */,
 			);
 			path = Resouces;
@@ -387,6 +398,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8EB44BE1EAB3F32007F4A2E /* Main.storyboard in Resources */,
+				49E26A891EF1230D0098DE29 /* Hello.strings in Resources */,
 				F887C3B61E6AE6690024A364 /* Assets.xcassets in Resources */,
 				F8EB44BA1EAB3EE0007F4A2E /* LaunchScreen.storyboard in Resources */,
 				49E26A851EF122540098DE29 /* Info.plist in Resources */,
