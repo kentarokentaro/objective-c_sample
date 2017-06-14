@@ -563,6 +563,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3B64BJJV65;
+				GCC_PREFIX_HEADER = "objective-c_sample/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = "objective-c_sample/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mkp.objective-c-sample";
@@ -575,6 +576,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3B64BJJV65;
+				GCC_PREFIX_HEADER = "objective-c_sample/Supporting Files/PrefixHeader.pch";
 				INFOPLIST_FILE = "objective-c_sample/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mkp.objective-c-sample";

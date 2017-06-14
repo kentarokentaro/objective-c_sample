@@ -23,11 +23,8 @@
   [super viewDidLoad];
 
   count = 0;
-  text =
-      @"Hello World!\nやっぱりHello "
-      @"Wolrdを書かないとはじまらない\nそう・・・\nそれは世界とつながる瞬間で"
-      @"す";
-
+    text = HelloString(@"Overview_Hello");
+    
   NSTimer *timer =
       [NSTimer scheduledTimerWithTimeInterval:0.1
                                        target:self
