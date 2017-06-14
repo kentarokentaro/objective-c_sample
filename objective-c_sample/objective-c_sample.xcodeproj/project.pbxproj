@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		49B2041A1E793B8600E50366 /* ViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B204191E793B8600E50366 /* ViewManager.m */; };
-		F887C3AB1E6AE6690024A364 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F887C3AA1E6AE6690024A364 /* main.m */; };
+		49E26A851EF122540098DE29 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49E26A831EF122540098DE29 /* Info.plist */; };
+		49E26A861EF122540098DE29 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E26A841EF122540098DE29 /* main.m */; };
 		F887C3AE1E6AE6690024A364 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F887C3AD1E6AE6690024A364 /* AppDelegate.m */; };
 		F887C3B61E6AE6690024A364 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F887C3B51E6AE6690024A364 /* Assets.xcassets */; };
 		F887C3C41E6AE6690024A364 /* objective_c_sampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F887C3C31E6AE6690024A364 /* objective_c_sampleTests.m */; };
@@ -43,12 +44,13 @@
 /* Begin PBXFileReference section */
 		49B204181E793B8600E50366 /* ViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewManager.h; sourceTree = "<group>"; };
 		49B204191E793B8600E50366 /* ViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewManager.m; sourceTree = "<group>"; };
+		49E26A811EF1211B0098DE29 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		49E26A831EF122540098DE29 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49E26A841EF122540098DE29 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F887C3A61E6AE6690024A364 /* objective-c_sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "objective-c_sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F887C3AA1E6AE6690024A364 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F887C3AC1E6AE6690024A364 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F887C3AD1E6AE6690024A364 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F887C3B51E6AE6690024A364 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F887C3BA1E6AE6690024A364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F887C3BF1E6AE6690024A364 /* objective-c_sampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "objective-c_sampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F887C3C31E6AE6690024A364 /* objective_c_sampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = objective_c_sampleTests.m; sourceTree = "<group>"; };
 		F887C3C51E6AE6690024A364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -133,8 +135,9 @@
 		F887C3A91E6AE6690024A364 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F887C3BA1E6AE6690024A364 /* Info.plist */,
-				F887C3AA1E6AE6690024A364 /* main.m */,
+				49E26A831EF122540098DE29 /* Info.plist */,
+				49E26A841EF122540098DE29 /* main.m */,
+				49E26A811EF1211B0098DE29 /* PrefixHeader.pch */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 				F8EB44BE1EAB3F32007F4A2E /* Main.storyboard in Resources */,
 				F887C3B61E6AE6690024A364 /* Assets.xcassets in Resources */,
 				F8EB44BA1EAB3EE0007F4A2E /* LaunchScreen.storyboard in Resources */,
+				49E26A851EF122540098DE29 /* Info.plist in Resources */,
 				F8EB44DA1EAB57E7007F4A2E /* HelloViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,7 +421,7 @@
 				49B2041A1E793B8600E50366 /* ViewManager.m in Sources */,
 				F8EB44D51EAB5780007F4A2E /* HelloModel.m in Sources */,
 				F8EB44D21EAB5765007F4A2E /* HelloViewController.m in Sources */,
-				F887C3AB1E6AE6690024A364 /* main.m in Sources */,
+				49E26A861EF122540098DE29 /* main.m in Sources */,
 				F8EB44C31EAB444E007F4A2E /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
