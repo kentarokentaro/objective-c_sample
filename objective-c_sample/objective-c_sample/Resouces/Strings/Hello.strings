@@ -7,4 +7,5 @@
 */
 
 "Overview_Hello" = "Hello World!\nやっぱりHello Wolrdを書かないとはじまらない\nそう・・・\nそれは世界とつながる瞬間です";
-
+"ButtonTitle_Hello" = "Hello Worldのコードを見る";
+"CodeText_Hello" = " //YourApp \n#import \"ViewController.h\"\n @interface ViewController () \n@end\n@implementation ViewController\n- (void)viewDidLoad {\n[super viewDidLoad];\nNSLog(@\"Hello World!\");\n}\n- (void)didReceiveMemoryWarning {\n[super didReceiveMemoryWarning];\n}\n@end";

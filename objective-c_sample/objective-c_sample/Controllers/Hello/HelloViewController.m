@@ -15,6 +15,8 @@
 }
 
 @property(weak, nonatomic) IBOutlet UILabel *helloLabel;
+@property(weak, nonatomic) IBOutlet UIButton *helloButton;
+@property(weak, nonatomic) IBOutlet UITextView *codeTextView;
 @property(weak, nonatomic) HelloModel *helloModel;
 
 @end
@@ -55,6 +57,13 @@
     [timer invalidate];
     count = 0;
     timer = nil;
+
+    [UIView animateWithDuration:1.0
+                     animations:^{
+                       _helloButton.hidden = NO;
+                       [_helloButton setTitle:[HelloModel getButtonTitle]
+                                     forState:UIControlStateNormal];
+                     }];
   }
 }
 
@@ -70,6 +79,18 @@
                   range:NSMakeRange(0, [attrStr length])];
 
   return attrStr;
+}
+
+- (IBAction)tapped:(id)sender {
+  [UIView animateWithDuration:0.5
+                   animations:^{
+
+                     _helloLabel.text = @"Hello World";
+                     _helloButton.hidden = YES;
+
+                     _codeTextView.hidden = NO;
+                     _codeTextView.text = [HelloModel getCodeText];
+                   }];
 }
 
 @end

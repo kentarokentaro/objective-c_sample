@@ -15,8 +15,13 @@
   return str;
 }
 
++ (NSString *)getButtonTitle {
+  NSString *str = HelloString(@"ButtonTitle_Hello");
+  return str;
+}
+
 + (NSString *)getCodeText {
-  NSString *str = @"";
+  NSString *str = HelloString(@"CodeText_Hello");
   return str;
 }
 

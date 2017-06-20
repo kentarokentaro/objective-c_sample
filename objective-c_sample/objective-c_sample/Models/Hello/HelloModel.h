@@ -11,6 +11,7 @@
 @interface HelloModel : NSObject
 
 + (NSString*)getOverview;
++ (NSString*)getButtonTitle;
 + (NSString*)getCodeText;
 + (NSString*)notes;
 @end
